@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="p-4 m-4">
+        <div class="col-lg-5 mx-auto border rounded pt-4 pb-4 px-3  ">
+            <h3 class="alert alert-dark border rounded">Create An Account</h3>
+            <form action="/signup" method="POST">
+                {% csrf_token %}
+
+                {% if error %}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <div class="form-group mt-2">
+
+                    <!-- First Nmae -->
+                    <label for=""><b>First Name</b></label>
+                    <input required type="text" value="{{values.first_name}}" name="firstname" id=""
+                        class="form-control form-control-sm" placeholder="Robert" aria-describedby="helpId">
+                </div>
+                <div class="form-group mt-2">
+                    <!-- Last Nmae -->
+                    <label for=""><b>Last Name</b></label>
+                    <input required type="text" value="{{values.last_name}}" name="lastname" id=""
+                        class="form-control form-control-sm" placeholder="Pattinson" aria-describedby="helpId">
+                </div>
+
+                <div class="form-group mt-2">
+                    <!-- Phone -->
+                    <label for=""><b>Phone</b></label>
+                    <input required type="text" value="{{values.phone}}" name="phone" id=""
+                        class="form-control form-control-sm" placeholder="5687867732" aria-describedby="helpId">
+                </div>
+                <div class="form-group mt-2">
+                    <!-- EMAIL -->
+                    <label for=""><b>Email</b></label>
+                    <input required type="email" value="{{values.email}}" name="email" id=""
+                        class="form-control form-control-sm" placeholder="example@gmail.com" aria-describedby="helpId">
+                </div>
+                <div class="form-group mt-2">
+                    <!-- PASSWORD -->
+                    <label for=""><b>Password</b></label>
+                    <input required type="password" name="password" id="" class="form-control form-control-sm"
+                        placeholder="********" aria-describedby="helpId">
+                </div>
+
+                <div class="form-group mt-2">
+                    <input class="btn btn-sm btn-success" type="submit" value="Create An Account">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
