@@ -1,9 +1,9 @@
 # E-Shop
 a Django-based E-shopping application.
 ## Features
--SignUp/Create an Account/Login/Logout-products with category, price, description-Add unlimited products to your cart
--checkout or order any product
--add products from admin panel
+- SignUp/Create an Account/Login/Logout-products with category, price, description-Add unlimited products to your cart
+- checkout or order any product
+- add products from admin panel
 
 ![Screenshot (232)](https://user-images.githubusercontent.com/52147606/109914884-e1519d80-7cd6-11eb-9512-1db322a1c336.png)
 ![Screenshot (231)](https://user-images.githubusercontent.com/52147606/109914896-e4e52480-7cd6-11eb-816a-ecbbcacda1e7.png)
