@@ -30,4 +30,5 @@ class CheckOut(View):
             
             order.place_order()
         request.session['cart']={}
+        print('+++++PASSED CHECKOUT=====+++++++++')
         return redirect('homepage')

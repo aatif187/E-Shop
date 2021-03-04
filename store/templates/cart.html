@@ -67,13 +67,13 @@
                 <form action="/check-out" method="POST">
                     {% csrf_token %}
                     <div class="form-group">
-                        <label for=""><b>Address</b></label>
-                        <input type="text" name="address" id="" class="form-control" placeholder=""
+                        <label  for=""><b>Address</b></label>
+                        <input required type="text" name="address" id="" class="form-control" placeholder=""
                             aria-describedby="helpId">
                     </div>
                     <div class="form-group">
                         <label for=""><b>Phone</b></label>
-                        <input type="text" name="phone" id="" class="form-control" placeholder=""
+                        <input required type="text" name="phone" id="" class="form-control" placeholder=""
                             aria-describedby="helpId">
                     </div>
 <hr>
